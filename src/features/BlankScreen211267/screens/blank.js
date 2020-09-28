@@ -19,30 +19,8 @@ export class __Blank extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return { headerLeft: <SlideMenuIcon navigationProps={navigation} /> }
   }
-  state = { Datepicker_3: new Date("09/28/2020") }
-  render = () => (
-    <View style={this.props.themedStyle.View_1}>
-      <Text style={this.props.themedStyle.Text_2}>Sample text content</Text>
-      <Datepicker
-        style={this.props.themedStyle.Datepicker_3}
-        date={this.state.Datepicker_3}
-        onSelect={nextValue => this.setState({ Datepicker_3: nextValue })}
-      />
-      <Button
-        textStyle={{
-          fontSize: 12,
-          color: "#000000",
-          textAlign: "center",
-          fontWeight: "normal",
-          fontStyle: "normal"
-        }}
-        style={this.props.themedStyle.Button_4}
-        onPress={() => alert("Pressed!")}
-      >
-        Press me!
-      </Button>
-    </View>
-  )
+  state = {}
+  render = () => <View style={this.props.themedStyle.View_1} />
 }
 
 _Blank = withStyles(__Blank, theme => ({
@@ -75,98 +53,6 @@ _Blank = withStyles(__Blank, theme => ({
     borderBottomWidth: 0,
     borderRadius: 0,
     backgroundSize: "auto"
-  },
-  Text_2: {
-    marginLeft: 0,
-    marginRight: 0,
-    marginTop: 5,
-    marginBottom: 5,
-    paddingLeft: 5,
-    paddingRight: 5,
-    paddingTop: 5,
-    paddingBottom: 5,
-    overflow: "visible",
-    fontSize: 12,
-    color: "#000000",
-    backgroundColor: "#ffffff",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    borderColor: "#000000",
-    borderStyle: "solid",
-    borderWidth: 0,
-    borderLeftWidth: 0,
-    borderRightWidth: 0,
-    borderTopWidth: 0,
-    borderBottomWidth: 0,
-    borderRadius: 0,
-    textAlign: "left",
-    textAlignVertical: "center",
-    textDecorationLine: "none",
-    textTransform: "none",
-    lineHeight: 12,
-    letterSpacing: 0
-  },
-  Datepicker_3: {
-    width: "100%",
-    marginLeft: 0,
-    marginRight: 0,
-    marginTop: 5,
-    marginBottom: 5,
-    paddingLeft: 5,
-    paddingRight: 5,
-    paddingTop: 5,
-    paddingBottom: 5,
-    overflow: "visible",
-    fontSize: 12,
-    color: "#000000",
-    backgroundColor: "#ffffff",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    borderColor: "#000000",
-    borderStyle: "solid",
-    borderWidth: 0,
-    borderLeftWidth: 0,
-    borderRightWidth: 0,
-    borderTopWidth: 0,
-    borderBottomWidth: 0,
-    borderRadius: 0,
-    textAlign: "left",
-    textAlignVertical: "center",
-    textDecorationLine: "none",
-    textTransform: "none",
-    lineHeight: 12,
-    letterSpacing: 0
-  },
-  Button_4: {
-    width: "100%",
-    marginLeft: 0,
-    marginRight: 0,
-    marginTop: 5,
-    marginBottom: 5,
-    paddingLeft: 5,
-    paddingRight: 5,
-    paddingTop: 5,
-    paddingBottom: 5,
-    overflow: "visible",
-    fontSize: 12,
-    color: "#000000",
-    backgroundColor: "#3366FF",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    borderColor: "#000000",
-    borderStyle: "solid",
-    borderWidth: 0,
-    borderLeftWidth: 0,
-    borderRightWidth: 0,
-    borderTopWidth: 0,
-    borderBottomWidth: 0,
-    borderRadius: 0,
-    textAlign: "center",
-    textAlignVertical: "center",
-    textDecorationLine: "none",
-    textTransform: "none",
-    lineHeight: 12,
-    letterSpacing: 0
   }
 }))
 
