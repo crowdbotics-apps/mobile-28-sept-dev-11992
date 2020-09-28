@@ -134,7 +134,7 @@ _Blank = withStyles(__Blank, theme => ({
     overflow: "visible",
     fontSize: 12,
     color: "#000000",
-    backgroundColor: "#3366FF",
+    backgroundColor: "#d6c1f1",
     fontStyle: "normal",
     fontWeight: "normal",
     borderColor: "#000000",
