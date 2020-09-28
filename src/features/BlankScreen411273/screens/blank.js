@@ -19,7 +19,12 @@ export class __Blank extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return { headerLeft: <SlideMenuIcon navigationProps={navigation} /> }
   }
-  state = { Datepicker_3: new Date("09/28/2020"), Toggle_4: true }
+  state = {
+    Datepicker_3: new Date("09/28/2020"),
+    Toggle_4: true,
+    Datepicker_6: new Date("09/28/2020"),
+    Input_7: ""
+  }
   render = () => (
     <View style={this.props.themedStyle.View_1}>
       <Button
@@ -48,6 +53,38 @@ export class __Blank extends React.Component {
         style={this.props.themedStyle.Toggle_4}
         checked={this.state.Toggle_4}
         onChange={nextChecked => this.setState({ Toggle_4: nextChecked })}
+      />
+      <Text style={this.props.themedStyle.Text_5}>Sample text content</Text>
+      <Datepicker
+        style={this.props.themedStyle.Datepicker_6}
+        date={this.state.Datepicker_6}
+        onSelect={nextValue => this.setState({ Datepicker_6: nextValue })}
+      />
+      <Input
+        placeholder="Number Input Placeholder"
+        editable={true}
+        keyboardType="numeric"
+        textStyle={{
+          fontSize: 12,
+          color: "#000000",
+          textAlign: "left",
+          fontWeight: "normal",
+          fontStyle: "normal"
+        }}
+        style={this.props.themedStyle.Input_7}
+        value={this.state.Input_7}
+        onChangeText={nextValue => this.setState({ Input_7: nextValue })}
+      />
+      <Slider
+        value={50}
+        minimumValue={0}
+        maximumValue={100}
+        step={1}
+        disabled={false}
+        maximumTrackTintColor="#E4E7ED"
+        minimumTrackTintColor="#3366FF"
+        thumbTintColor="#3366FF"
+        style={this.props.themedStyle.Slider_8}
       />
     </View>
   )
@@ -170,6 +207,117 @@ _Blank = withStyles(__Blank, theme => ({
     textTransform: "none",
     lineHeight: 12,
     letterSpacing: 0
+  },
+  Text_5: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Datepicker_6: {
+    width: "100%",
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Input_7: {
+    width: "100%",
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Slider_8: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0
   }
 }))
 
